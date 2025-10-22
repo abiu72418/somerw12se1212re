@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEC Share Data</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="app-container">
+        <header>
+            <h1>
+                <span id="share-entity-name">Loading Company Data...</span>
+            </h1>
+            <p class="subtitle">Outstanding Common Stock Shares (Post-2020)</p>
+        </header>
+
+        <main id="data-display">
+            <div class="card max-card">
+                <h2>Maximum Shares</h2>
+                <p class="value" id="share-max-value">...</p>
+                <p class="label">in fiscal year <span id="share-max-fy">...</span></p>
+            </div>
+            <div class="card min-card">
+                <h2>Minimum Shares</h2>
+                <p class="value" id="share-min-value">...</p>
+                <p class="label">in fiscal year <span id="share-min-fy">...</span></p>
+            </div>
+        </main>
+
+        <div id="status-container">
+            <div id="loader" class="hidden">
+                <div class="spinner"></div>
+                <p>Fetching data from SEC...</p>
+            </div>
+            <div id="error-message" class="hidden"></div>
+        </div>
+
+        <footer>
+            <p>somerw12se1212re Project</p>
+        </footer>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
